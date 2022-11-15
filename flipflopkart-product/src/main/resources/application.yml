@@ -1,0 +1,14 @@
+server:
+  port: 8084
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/dcbapp-prod
+    password: Admin!23
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
