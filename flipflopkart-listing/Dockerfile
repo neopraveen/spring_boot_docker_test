@@ -1,4 +1,6 @@
 FROM openjdk:11
 EXPOSE 8083
-COPY target/flipflop-listing-docker-sample*.jar flipflop-listing-docker-sample.jar
+WORKDIR .
+COPY target/flipflop-*.jar flipflop-listing-docker-sample.jar
+CMD ["ls", "-la"]
 CMD ["java", "-jar", "flipflop-listing-docker-sample.jar"]
